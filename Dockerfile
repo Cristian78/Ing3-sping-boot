@@ -7,6 +7,8 @@ RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package
 
 FROM openjdk:8-jre-alpine
 
+ENV PORT=8080
+
 EXPOSE 8080
 
 RUN mkdir /app
